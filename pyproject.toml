@@ -1,0 +1,16 @@
+[project]
+name = "om"
+version = "0.1.0"
+description = "om site for self learning and notes"
+authors = [
+    { name = "Arun Kumar N", email = "im@arunkumarn.in" }
+]
+dependencies = [
+    "mkdocs-material>=9.7.6",
+    "mkdocs-blogging-plugin>=2.2.11",
+    "mkdocs-video>=1.5.0",
+    "pymdown-extensions>=10.21.2",
+    "mkdocs-markmap>=2.5.2",
+]
+readme = "README.md"
+requires-python = ">= 3.9"

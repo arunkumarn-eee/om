@@ -1,0 +1,21 @@
+# python generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+
+# venv
+.venv
+
+
+# user defined
+backup_mkdocs.yml
+site/
+tempfiles/
+
+topics.md
+ideas.md
+product_links.md

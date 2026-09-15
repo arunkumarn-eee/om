@@ -1,0 +1,125 @@
+site_name: 🕉 (OM)
+site_url: https://om.arunkumarn.in
+site_author: Arun kumar N
+
+nav:
+  - 🕉: index.md
+
+theme:
+  name: material
+  logo: assets/image/favicon.png
+  favicon: assets/image/favicon.png
+  custom_dir: templates/
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - content.code.copy
+    - content.footnote.tooltips
+    - content.tabs.link
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: black
+      accent: amber
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+plugins:
+  - mkdocs-video
+  - markmap:
+      base_path: mindmaps
+      encoding: utf-8
+      file_extension: .mm.md
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - md_in_html
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.blocks.caption
+
+copyright: Copyright &copy; 2025-2026, Arun Kumar N
+
+extra:
+  # analytics:
+  #   provider: google
+  #   property: G-MLSHZKZLZ8
+  generator: false
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@aavishkarah?sub_confirmation=1
+      name: Aavishkarah on youtube    
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@AttoDisk?sub_confirmation=1
+      name: Atto Disk on youtube
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/aavishkarah
+      name: Aavishkarah on Instagram    
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/rlc.eee/
+      name: RLC-EEE on Instagram
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/people/Aavishkarah/61573021117727
+      name: Aavishkarah on Facebook
+    - icon: fontawesome/brands/whatsapp
+      link: https://whatsapp.com/channel/0029Vb5ddY75a24ASH3a4535
+      name: Aavishkarah on WhatsApp
+    - icon: fontawesome/brands/github
+      link: https://github.com/aavishkarah
+      name: Aavishkarah on Github
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/SDpython
+      name: Python on Telegram
+
+extra_css:
+  - stylesheets/extra.css
