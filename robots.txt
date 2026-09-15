@@ -1,0 +1,8 @@
+User-agent: *
+
+Allow: /
+Disallow: /draft/
+Disallow: /user/
+
+
+Sitemap: https://om.arunkumarn.in/sitemap.xml
