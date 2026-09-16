@@ -4,6 +4,9 @@ site_author: Arun kumar N
 
 nav:
   - 🕉: index.md
+  - yoga :
+    - yoga : yoga.md
+    - योगसूत्र : yoga/patanjali-yoga-sutra/index.md
 
 theme:
   name: material
