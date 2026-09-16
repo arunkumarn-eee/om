@@ -1,0 +1,257 @@
+/* ==========================================================================
+   OM — extra.css
+   Design intent: a quiet, editorial reading space for personal notes on
+   yoga and dharma, written across English, Devanagari, Kannada, Tamil and
+   Telugu. One serif/sans pairing carries the whole site (both have full
+   Indic coverage, so script-switching mid-sentence never breaks the type),
+   a single saffron accent stands in for the ritual marigold/turmeric this
+   subject actually uses, and a deep dusk-indigo carries the dark palette.
+   Motion and ornament are kept to one small, repeated "bindu" mark rather
+   than scattered card shadows or eyebrow labels.
+   ========================================================================== */
+
+/* -- Fonts: full Indic + Latin coverage, loaded once -------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Noto+Serif+Kannada:wght@400;600;700&family=Noto+Serif+Tamil:wght@400;600;700&family=Noto+Serif+Telugu:wght@400;600;700&family=Noto+Sans:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&family=Noto+Sans+Kannada:wght@400;500;600&family=Noto+Sans+Tamil:wght@400;500;600&family=Noto+Sans+Telugu:wght@400;500;600&display=swap");
+
+/* -- Design tokens -------------------------------------------------------- */
+:root {
+  --om-ink: #1c1712;
+  --om-paper: #fbf7ee;
+  --om-paper-raised: #f4eee0;
+  --om-saffron: #d99a2b;
+  --om-saffron-strong: #b97e1a;
+  --om-indigo: #333a63;
+  --om-ash: #8a8072;
+  --om-rule: rgba(28, 23, 18, 0.12);
+
+  --om-font-body: "Noto Sans Devanagari", "Noto Sans Kannada",
+    "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans", -apple-system,
+    sans-serif;
+  --om-font-display: "Noto Serif Devanagari", "Noto Serif Kannada",
+    "Noto Serif Tamil", "Noto Serif Telugu", "Noto Serif", Georgia, serif;
+}
+
+[data-md-color-scheme="slate"] {
+  --om-ink: #ece6d8;
+  --om-paper: #14110f;
+  --om-paper-raised: #1c1815;
+  --om-saffron: #e8ac4a;
+  --om-saffron-strong: #f0be6c;
+  --om-indigo: #a9b0dd;
+  --om-ash: #948b7c;
+  --om-rule: rgba(236, 230, 216, 0.14);
+}
+
+/* -- Base type -------------------------------------------------------------
+   Indic vowel signs and conjuncts need more vertical room than Latin text,
+   so body line-height is set noticeably looser than a Latin-only default. */
+.md-typeset {
+  font-family: var(--om-font-body);
+  font-size: 0.72rem;
+  line-height: 1.8;
+  color: var(--om-ink);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: var(--om-font-display);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+
+.md-typeset h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.9em;
+}
+
+.md-typeset h2 {
+  font-size: 1.4rem;
+  margin-top: 1.8em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--om-rule);
+}
+
+.md-typeset h3 {
+  font-size: 1.12rem;
+  color: var(--om-indigo);
+}
+
+/* A single small ornament — a bindu dot — instead of eyebrow labels or
+   numbered markers on every heading. Used once, at the top of an h1, as
+   the one deliberate flourish on the page. */
+.md-typeset h1::before {
+  content: "";
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  margin-bottom: 0.6em;
+  border-radius: 50%;
+  background: var(--om-saffron);
+}
+
+.md-typeset p,
+.md-typeset li {
+  max-width: 68ch;
+}
+
+.md-typeset a {
+  color: var(--om-saffron-strong);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+.md-typeset a:hover {
+  color: var(--om-saffron);
+}
+
+/* -- Page chrome ------------------------------------------------------- */
+.md-header {
+  background-color: var(--om-paper);
+  color: var(--om-ink);
+  box-shadow: none;
+  border-bottom: 1px solid var(--om-rule);
+}
+
+.md-header__title,
+.md-header__button {
+  color: var(--om-ink);
+}
+
+.md-tabs {
+  background-color: var(--om-paper-raised);
+  border-bottom: 1px solid var(--om-rule);
+}
+
+.md-tabs__link {
+  color: var(--om-ash);
+  font-family: var(--om-font-body);
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: var(--om-ink);
+}
+
+/* Active nav item marked with a small dot rather than a filled pill,
+   echoing the h1 bindu without repeating a card/shadow pattern. */
+.md-nav__link--active {
+  color: var(--om-saffron-strong);
+  font-weight: 600;
+}
+
+.md-nav__item .md-nav__link--active::before {
+  content: "";
+  display: inline-block;
+  width: 0.35em;
+  height: 0.35em;
+  margin-right: 0.5em;
+  border-radius: 50%;
+  background: var(--om-saffron);
+  vertical-align: middle;
+}
+
+/* -- Admonitions: flat editorial style, not the rounded shadow-card kit -- */
+.md-typeset .admonition,
+.md-typeset details {
+  border: none;
+  border-left: 3px solid var(--om-saffron);
+  border-radius: 0;
+  background: var(--om-paper-raised);
+  box-shadow: none;
+  font-family: var(--om-font-body);
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  background: transparent;
+  font-family: var(--om-font-display);
+  font-weight: 600;
+}
+
+.md-typeset .admonition-title::before,
+.md-typeset summary::before {
+  background-color: var(--om-saffron);
+}
+
+/* -- Blockquotes ---------------------------------------------------------- */
+.md-typeset blockquote {
+  border-left: 3px solid var(--om-indigo);
+  color: var(--om-ash);
+  font-family: var(--om-font-display);
+  font-style: normal;
+}
+
+/* -- Code ------------------------------------------------------------------
+   Code stays Latin/monospace by nature, so it keeps its own stack rather
+   than the Indic-aware body font. */
+.md-typeset code {
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  background: var(--om-paper-raised);
+  border-radius: 3px;
+}
+
+.md-typeset pre > code {
+  border-radius: 6px;
+}
+
+/* -- Tables ----------------------------------------------------------------- */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--om-rule);
+  border-radius: 0;
+}
+
+.md-typeset table:not([class]) th {
+  font-family: var(--om-font-display);
+  background: var(--om-paper-raised);
+}
+
+/* -- Tags (used by the tags plugin) -------------------------------------- */
+.md-typeset .md-tag {
+  font-family: var(--om-font-body);
+  background: var(--om-paper-raised);
+  border: 1px solid var(--om-rule);
+  color: var(--om-ash);
+}
+
+/* -- Footer ----------------------------------------------------------------- */
+.md-footer {
+  background: var(--om-indigo);
+}
+
+.md-footer-meta {
+  background: color-mix(in srgb, var(--om-indigo) 85%, black);
+}
+
+/* -- One deliberate motion moment: content settles in on load, nothing
+   else on the page animates on its own. -------------------------------- */
+.md-content__inner {
+  animation: om-settle 0.5s ease-out;
+}
+
+@keyframes om-settle {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-content__inner {
+    animation: none;
+  }
+}
+
+/* -- Small screens: loosen line-height further, Indic scripts feel
+   cramped first on narrow viewports. ------------------------------------ */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset {
+    line-height: 1.9;
+  }
+}
