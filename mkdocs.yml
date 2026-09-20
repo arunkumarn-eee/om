@@ -4,9 +4,12 @@ site_author: Arun kumar N
 
 nav:
   - 🕉: index.md
-  - yoga :
+  - योग :
     - yoga : yoga.md
     - योगसूत्र : yoga/patanjali-yoga-sutra/index.md
+  - मंत्र : 
+    - mantra : mantra/index.md
+    - shanti mantra : mantra/shanti_mantra.md
 
 theme:
   name: material
