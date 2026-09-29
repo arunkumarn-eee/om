@@ -9,7 +9,8 @@ nav:
     - योगसूत्र : yoga/patanjali-yoga-sutra/index.md
   - मंत्र : 
     - mantra : mantra/index.md
-    - shanti mantra : mantra/shanti_mantra.md
+    - Surya Namaskara Mantra: mantra/surya_namaskara_mantra.md
+    - Shanti Mantra : mantra/shanti_mantra.md
 
 theme:
   name: material
