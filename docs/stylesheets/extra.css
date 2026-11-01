@@ -39,3 +39,9 @@
     "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans", -apple-system,
     sans-serif;
   }
+
+  .vedic-text{
+    font-size:xx-large;
+    text-align: center;
+    
+  }

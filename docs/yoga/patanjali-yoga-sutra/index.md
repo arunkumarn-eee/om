@@ -4,3 +4,6 @@
 - साधनपादः Sadana Pada
 - विभूतिपादः Vibhuti Pada
 - कैवल्यपादः Kaivalya Pada
+
+
+[Samadhi Pada Presentation](https://arunkumarn-eee.github.io/patanjali_yogasutra/){.md-button target="_blank"}
