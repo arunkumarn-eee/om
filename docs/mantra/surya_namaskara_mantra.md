@@ -18,6 +18,16 @@ Tat tvaṃ pūṣann apāvṛṇu satya-dharmāya dṛṣṭaye || 15 ||
     The face of Truth is covered by a golden vessel. O Pūṣan (the Sun), remove that covering so that I, devoted to Truth, may behold it.
 
 
+???- bug "Questions"
+    - Is Surya Namaskara mentioned in any traditional text or scripture?
+    - Why only 12 mantras, out of the 108 names of Surya?
+    - Is there an authentic form? Schools differ: beeja sound + mantra on every asana (Art of Living), beeja + mantra only after a round, or no mantras at all. Which lineages follow a documented method?
+    - Is there any paper or scripture establishing its origin and authenticity, or is it a modern synthesis?
+
+    **Help us to share the knowledge.** Send your answer or opinion with substantial evidences or explanations to update. 
+    > :email: `im@arunkumarn.in`
+
+
 ## 12 सूर्य नमस्कार मंत्र
 
 ॐ मित्राय नमः  
@@ -49,3 +59,13 @@ Tat tvaṃ pūṣann apāvṛṇu satya-dharmāya dṛṣṭaye || 15 ||
 | om hraim (ॐ ह्रैं) | om savitre namaḥ (ॐ सवित्रे नमः)              | Swadhisthana |
 | om hraum (ॐ ह्रौं) | om arkāya namaḥ (ॐ अर्काय नमः)               | Vishuddhi    |
 | om hraḥ (ॐ ह्रः)  | om bhāskarāya namaḥ (ॐ भास्कराय नमः)          | Anahata      |
+
+
+???+ bug "Questions"
+    - Is Surya Namaskara mentioned in any traditional text or scripture?
+    - Why only 12 mantras, out of the 108 names of Surya?
+    - Is there an authentic form? Schools differ: beeja sound + mantra on every asana (Art of Living), beeja + mantra only after a round, or no mantras at all. Which lineages follow a documented method?
+    - Is there any paper or scripture establishing its origin and authenticity, or is it a modern synthesis?
+
+    **Help us to share the knowledge.** Send your answer or opinion with substantial evidences or explanations to update. 
+    > :email: `im@arunkumarn.in`
