@@ -18691,7 +18691,7 @@ ${end2.comment}` : end2.comment;
     }
   }
   const transformerVersions = {
-    "markmap-lib": "0.18.12"
+    "markmap-lib": "0.18.13"
   };
   exports.Transformer = Transformer;
   exports.builtInPlugins = builtInPlugins;
